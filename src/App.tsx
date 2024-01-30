@@ -15,6 +15,7 @@ function App() {
   const [includeLowerCase,SetIncludeLowerCase] = useState<boolean>(true)
   const [includeNumbers,SetIncludeNumbers] = useState<boolean>(true)
   const [includeSymbols,SetIncludeSymbols] = useState<boolean>(false)
+  const [position, setPosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   function handleGeneratePassword(){
     const newPassword = generatePassword({
       length:passwordLength,
@@ -36,6 +37,13 @@ function App() {
 
   return (
     <>
+      <div
+        onPointerMove={(e) => {
+          setPosition({ x: e.clientX, y: e.clientY });
+        }}
+        className='gela'
+        style={{ position: 'relative' }} 
+      >
      <div className="font-fontfamily flex flex-col gap-4 justify-center items-center
      min-h-screen bg-black text-white">
       <h1>Giorgi Bachidze</h1>
@@ -78,6 +86,24 @@ function App() {
           </button>
       </div>
      </div>
+     <div
+     
+          style={{
+            position: 'fixed',
+            width: 50,
+            height: 50,
+            borderRadius: '50%',
+            background: 'transparent', 
+            border: '2px solid #A4FFAF',
+            transform: 'translate(-50%, -50%)',
+            left: `${position.x}px`,
+            top: `${position.y}px`,
+            pointerEvents: 'none', 
+            zIndex: 9999, 
+            transition:'0.1s'
+          }}
+        ></div>
+      </div>
     </>
   )
 }
