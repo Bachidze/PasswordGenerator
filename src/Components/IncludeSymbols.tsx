@@ -16,7 +16,7 @@ return (
       className="mr-2"
       onChange={handleIncludeSymbolChange}
       />
-      <label className="xl:text-[25px]" htmlFor="includeSymbols">
+      <label className="xl:text-[25px] font-fontFamily" htmlFor="includeSymbols">
           Include Symbol Letters
       </label>
   </div>

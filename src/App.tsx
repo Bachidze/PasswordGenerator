@@ -33,6 +33,7 @@ function App() {
     }
   }
 
+
  
 
 
@@ -47,7 +48,7 @@ function App() {
       >
      <div className="font-fontfamily flex flex-col gap-4 justify-center items-center
      min-h-screen bg-black text-white">
-      <h1 className="xl:text-[40px] dark">Giorgi Bachidze</h1>
+      <h1 className="xl:text-[40px] font-fontFamily">Giorgi Bachidze</h1>
       {password && 
       <div className="bg-[#18171F] text-white px-4 py-2 break-all
        flex justify-between items-center w-[320px] mb-4 xl:w-[600px] xl:h-[50px]">
@@ -82,7 +83,7 @@ function App() {
         <button onClick={handleGeneratePassword} className="
         px-4 py-4 bg-[#A4FFAF] rounded-md shadow-md w-full
         border text-black border-solid hover:border-#A4FFAF
-      hover:text-[#A4FFAF] hover:bg-[#18171F] transition-all duration-300 uppercase xl:mt-[25px]">
+      hover:text-[#A4FFAF] hover:bg-[#18171F] transition-all   duration-300 uppercase font-fontFamily xl:mt-[25px]">
           Generate
           </button>
       </div>

@@ -18,7 +18,7 @@ return (
       className="mr-2"
       onChange={handleIncludeLowercaseChange}
       />
-      <label className="xl:text-[25px]" htmlFor="includeLowercase">
+      <label className="xl:text-[25px] font-fontFamily" htmlFor="includeLowercase">
           Include Lowercase Letters
       </label>
   </div>

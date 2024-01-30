@@ -14,7 +14,7 @@ const PasswordLength = ({passwordLength,setPasswordLength}:PasswordLengthProps) 
         justify-between 
         font-medium'>
 
-        <div>Password length</div>
+        <div className='font-fontFamily'>Password length</div>
         <div className='
           text-2xl
         text-[#A5FFaF]'

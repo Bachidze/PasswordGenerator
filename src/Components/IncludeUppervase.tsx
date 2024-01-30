@@ -14,7 +14,7 @@ const IncludeUppervase = ({includeUppercase,setIncludeUppercase}:IncludeUpperCas
         className="mr-2"
         onChange={handleIncludeUppercaseChange}
         />
-        <label className="xl:text-[25px]" htmlFor="includeUppercase">
+        <label className="xl:text-[25px] font-fontFamily" htmlFor="includeUppercase">
             Include Uppercase Letters
         </label>
     </div>

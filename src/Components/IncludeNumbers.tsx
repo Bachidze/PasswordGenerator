@@ -16,7 +16,7 @@ return (
       className="mr-2"
       onChange={handleIncludeNumberChange}
       />
-      <label className="xl:text-[25px]" htmlFor="includeNumbers">
+      <label className="xl:text-[25px] font-fontFamily" htmlFor="includeNumbers">
           Include Number Letters
       </label>
   </div>
