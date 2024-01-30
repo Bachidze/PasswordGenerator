@@ -1,12 +1,10 @@
-import { ChangeEvent } from "react"
-
 type IncludeUpperCaseProps = {
     includeUppercase : boolean
     setIncludeUppercase: (include:boolean) => void
   }
 
 const IncludeUppervase = ({includeUppercase,setIncludeUppercase}:IncludeUpperCaseProps) => {
-    function handleIncludeUppercaseChange (e:ChangeEvent<HTMLInputElement>){
+    function handleIncludeUppercaseChange (){
         setIncludeUppercase(!includeUppercase)
     }
   return (
