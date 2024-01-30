@@ -10,7 +10,7 @@ const IncludeLowercases = ({includeLowerCase,SetIncludeLowerCase}:IncludeLowerCa
     SetIncludeLowerCase(!includeLowerCase)
   }
 return (
-  <div className="mb-2">
+  <div className="mb-2 xl:pt-[12px]">
       <input 
       type="checkbox"
       id='includeLowercase' 
@@ -18,7 +18,7 @@ return (
       className="mr-2"
       onChange={handleIncludeLowercaseChange}
       />
-      <label htmlFor="includeLowercase">
+      <label className="xl:text-[25px]" htmlFor="includeLowercase">
           Include Lowercase Letters
       </label>
   </div>

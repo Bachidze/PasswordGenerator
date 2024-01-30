@@ -32,7 +32,8 @@ function App() {
       navigator.clipboard.writeText(password)
     }
   }
-   
+
+ 
 
 
   return (
@@ -46,15 +47,15 @@ function App() {
       >
      <div className="font-fontfamily flex flex-col gap-4 justify-center items-center
      min-h-screen bg-black text-white">
-      <h1>Giorgi Bachidze</h1>
+      <h1 className="xl:text-[40px] dark">Giorgi Bachidze</h1>
       {password && 
       <div className="bg-[#18171F] text-white px-4 py-2 break-all
-       flex justify-between items-center w-[320px] mb-4">
+       flex justify-between items-center w-[320px] mb-4 xl:w-[600px] xl:h-[50px]">
         <div className="text-xl">{password}</div>
         <button className="text-xl" onClick={handleCopy}><AiOutlineCopy/></button>
       </div>
       }
-      <div className="w-[320px] bg-[#24232C] p-4 gap-2">
+      <div className="w-[320px] bg-[#24232C dark:bg-#A4FFAF] p-4 gap-2 xl:w-[600px] xl:h-[410px]">
         <PasswordLength 
         passwordLength={passwordLength}
         setPasswordLength = {SetPasswordLength}
@@ -81,7 +82,7 @@ function App() {
         <button onClick={handleGeneratePassword} className="
         px-4 py-4 bg-[#A4FFAF] rounded-md shadow-md w-full
         border text-black border-solid hover:border-#A4FFAF
-      hover:text-[#A4FFAF] hover:bg-[#18171F] transition-all duration-300 uppercase">
+      hover:text-[#A4FFAF] hover:bg-[#18171F] transition-all duration-300 uppercase xl:mt-[25px]">
           Generate
           </button>
       </div>

@@ -8,7 +8,7 @@ const IncludeSymbols = ({includeSymbols,SetIncludeSymbols}:PasswordSymbolProps) 
     SetIncludeSymbols(!includeSymbols)
   }
 return (
-  <div className="mb-2">
+  <div className="mb-2 xl:pt-[12px]">
       <input 
       type="checkbox"
       id='includeSymbols' 
@@ -16,7 +16,7 @@ return (
       className="mr-2"
       onChange={handleIncludeSymbolChange}
       />
-      <label htmlFor="includeSymbols">
+      <label className="xl:text-[25px]" htmlFor="includeSymbols">
           Include Symbol Letters
       </label>
   </div>

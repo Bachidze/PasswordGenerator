@@ -8,7 +8,7 @@ const IncludeNumbers = ({includeNumbers,SetIncludeNumbers}:PasswordNumberProps) 
     SetIncludeNumbers(!includeNumbers)
   }
 return (
-  <div className="mb-2">
+  <div className="mb-2 xl:pt-[12px]">
       <input 
       type="checkbox"
       id='includeNumbers' 
@@ -16,7 +16,7 @@ return (
       className="mr-2"
       onChange={handleIncludeNumberChange}
       />
-      <label htmlFor="includeNumbers">
+      <label className="xl:text-[25px]" htmlFor="includeNumbers">
           Include Number Letters
       </label>
   </div>
