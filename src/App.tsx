@@ -56,7 +56,7 @@ function App() {
         <button className="text-xl" onClick={handleCopy}><AiOutlineCopy/></button>
       </div>
       }
-      <div className="w-[320px] bg-[#24232C dark:bg-#A4FFAF] p-4 gap-2 xl:w-[600px] xl:h-[410px]">
+      <div className="w-[320px] dark:bg-white bg-[#24232C dark:bg-#A4FFAF] p-4 gap-2 xl:w-[600px] xl:h-[410px]">
         <PasswordLength 
         passwordLength={passwordLength}
         setPasswordLength = {SetPasswordLength}
